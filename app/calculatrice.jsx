@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 export default function Calculatrice(){
+    const digits = ["1", "2", "3", "+", "4", "5", "6", "-", "7", "8", "9", "x", " ", "0"]
     return(
         <View style={styles.calculator}>
             <View>
@@ -8,7 +9,9 @@ export default function Calculatrice(){
             </View>
 
             <View>
-                <Text>test 2</Text>
+                {digits.map((digit, index) => (
+                    <Text>{digit}</Text>
+                ))}
             </View>
         </View>
     )

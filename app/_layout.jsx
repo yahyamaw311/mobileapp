@@ -9,8 +9,8 @@ const RootLayout = () => {
             <Link rel='StyleSheet' href="calculatrice"> Go to test</Link>
         </SafeAreaView>
         <Stack>
-            <Stack.Screen name="index" options={{headerShown: true}} />
             <Stack.Screen name="calculatrice" options={{headerShown: true}} />
+            <Stack.Screen name="index" options={{headerShown: false}} />
         </Stack>
     </>
   )
