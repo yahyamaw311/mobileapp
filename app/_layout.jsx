@@ -1,15 +1,16 @@
 import { StyleSheet, Text, View } from 'react-native'
-import { Stack } from 'expo-router'
+import { Link, Stack } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 const RootLayout = () => {
   return (
     <>
         <SafeAreaView>
-            <Text>RootLayout</Text>
+            <Link rel='StyleSheet' href="test"> Go to test</Link>
         </SafeAreaView>
         <Stack>
             <Stack.Screen name="index" options={{headerShown: true}} />
+            <Stack.Screen name="test" options={{headerShown: true}} />
         </Stack>
     </>
   )

@@ -3,7 +3,8 @@ import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import dog from '../img/dog-png-30.png'
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ScrollView>
+      <View style={styles.container}>
 
       <ScrollView style={styles.scrollImages} horizontal={true}>
         
@@ -24,6 +25,8 @@ export default function App() {
       </ScrollView>
       
     </View>
+    </ScrollView>
+    
   );
 }
 
