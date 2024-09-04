@@ -6,11 +6,11 @@ const RootLayout = () => {
   return (
     <>
         <SafeAreaView>
-            <Link rel='StyleSheet' href="test"> Go to test</Link>
+            <Link rel='StyleSheet' href="calculatrice"> Go to test</Link>
         </SafeAreaView>
         <Stack>
             <Stack.Screen name="index" options={{headerShown: true}} />
-            <Stack.Screen name="test" options={{headerShown: true}} />
+            <Stack.Screen name="calculatrice" options={{headerShown: true}} />
         </Stack>
     </>
   )
